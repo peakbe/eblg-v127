@@ -18,7 +18,7 @@ import { loadTaf } from "./js/taf.js";
 import { loadFids } from "./js/fids.js";
 
 // UI générale
-import { initUI } from "./js/ui.js";
+import { initUI } from "./ui.js";
 
 // Sonomètres : liste + heatmap toggle
 import { populateSonometerList, initHeatmapToggle } from "./js/sonometers.js";
