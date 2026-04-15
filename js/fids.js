@@ -44,11 +44,13 @@ export function updateFidsUI(data) {
     const container = document.getElementById("fids");
     if (!container) return;
 
-    if (data.fallback) {
-        container.innerHTML = `<div class="fids-row fids-unknown">FIDS indisponible</div>`;
+    // Détection fallback dynamique (backend renvoie un tableau)
+    if (Array.isArray(data) && data.length && data[0].fallback === true) {
+        container.innerHTML = `<div class="fids-row fids-unknown">FIDS indisponible (fallback)</div>`;
         return;
     }
 
+    // Données réelles
     const flights = Array.isArray(data) ? data : [];
     container.innerHTML = "";
 
