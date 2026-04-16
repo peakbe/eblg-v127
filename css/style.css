@@ -312,3 +312,61 @@ h2 {
     pointer-events: none !important;
     position: absolute !important;
 }
+/* ======================================================
+   LOGS RENDER — VERSION COMPACTE (STYLE ORIGINAL)
+====================================================== */
+
+.logs-panel,
+.logs-live {
+    background: rgba(0,0,0,0.55) !important;
+    border: 1px solid #1e2a38 !important;
+    padding: 8px 10px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    max-height: 160px !important;
+    overflow-y: auto !important;
+    color: #cfd3d8 !important;
+}
+
+/* Positionnement compact */
+.logs-panel {
+    margin-bottom: 10px;
+}
+
+.logs-live {
+    margin-top: 10px;
+}
+
+/* Entrées */
+.log-entry,
+.log-live-entry {
+    padding: 4px 6px !important;
+    margin-bottom: 4px !important;
+    border-radius: 4px !important;
+    line-height: 1.2 !important;
+}
+
+/* Couleurs */
+.log-ok,
+.log-live-ok {
+    background: rgba(0, 200, 0, 0.20) !important;
+    color: #9f9 !important;
+}
+
+.log-warn,
+.log-live-warn {
+    background: rgba(255, 165, 0, 0.20) !important;
+    color: #ffb !important;
+}
+
+.log-error,
+.log-live-error {
+    background: rgba(255, 0, 0, 0.20) !important;
+    color: #f99 !important;
+}
+
+.log-time,
+.log-live-time {
+    opacity: 0.6 !important;
+    font-size: 10px !important;
+}
